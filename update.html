@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Update biodata mahasiswa">
+    <title>Update Biodata - Biodata Mahasiswa</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <header class="topbar">
+        <div class="brand">
+            <img src="assets/logo-undiksha.png" alt="Logo Undiksha" class="logo">
+            <div>
+                <h1>Selamat Datang</h1>
+                <p>Sistem Informasi Biodata Mahasiswa</p>
+            </div>
+        </div>
+        <a href="#" class="logout">Keluar</a>
+    </header>
+
+    <div class="layout">
+        <nav class="sidebar">
+    <h2>Menu</h2>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="biodata.html">Biodata</a></li>
+        <li><a href="update.html">Update Biodata</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+        <main>
+            <section class="form-section">
+                <h2>Update Biodata</h2>
+                <form>
+                    <div class="form-row">
+                        <label for="nama">Nama</label>
+                        <input type="text" id="nama" name="nama" placeholder="Tuliskan Nama Anda">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Tuliskan Password Anda">
+                    </div>
+
+                    <div class="form-row">
+                        <label>Jenis Kelamin</label>
+                        <div class="inline-options">
+                            <label><input type="radio" name="kelamin" value="laki-laki" checked> Laki-Laki</label>
+                            <label><input type="radio" name="kelamin" value="perempuan"> Perempuan</label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <label>Hobi</label>
+                        <div class="inline-options">
+                            <label><input type="checkbox" name="hobi" value="membaca"> Membaca Buku</label>
+                            <label><input type="checkbox" name="hobi" value="menulis" checked> Menulis</label>
+                            <label><input type="checkbox" name="hobi" value="olahraga"> Olahraga</label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="kota">Asal Kota</label>
+                        <select id="kota" name="kota">
+                            <option value="singaraja">Singaraja</option>
+                            <option value="denpasar">Denpasar</option>
+                            <option value="tangerang">Tangerang</option>
+                            <option value="jakarta">Jakarta</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="komentar">Komentar</label>
+                        <textarea id="komentar" name="komentar" rows="5"></textarea>
+                    </div>
+
+                    <button type="submit">Simpan</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; 2026 Ilo</p>
+    </footer>
+
+</body>
+</html>
